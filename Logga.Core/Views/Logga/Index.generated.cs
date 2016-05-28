@@ -31,7 +31,7 @@ namespace ASP
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Logga/Index.cshtml")]
-    public partial class _Views_Logga_Index_cshtml : System.Web.Mvc.WebViewPage<IEnumerable<Logga.Data.LoggaEntry>>
+    public partial class _Views_Logga_Index_cshtml : System.Web.Mvc.WebViewPage<IEnumerable<Logga.Entities.LoggaEntry>>
     {
         public _Views_Logga_Index_cshtml()
         {
@@ -347,7 +347,7 @@ WriteLiteral(@"                </tbody>
             
             #line default
             #line hidden
-WriteLiteral(" - Logga Dashboard</p>\n        </footer>\n    </div>\n</body>\n</html>\n");
+WriteLiteral(" - My ASP.NET Application</p>\n        </footer>\n    </div>\n</body>\n</html>\n");
 
         }
     }

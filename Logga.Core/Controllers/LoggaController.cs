@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using Dapper;
-using Logga.Data;
+using Logga.Entities;
+
 
 namespace Logga.Controllers
 {
@@ -18,6 +19,8 @@ namespace Logga.Controllers
 
         public ActionResult Index()
         {
+            //if (!LoggaConfiguration.LoggaOptions.HavePermission) throw new ArgumentException("Not Have Permission");
+
             using (var connection = ConnectionConfiguration.GetOpenConnection(LoggaConfiguration._connectionString))
             {
                 var loggaList = connection.Query<LoggaEntry>("SELECT * FROM LoggaEntry");
@@ -28,6 +31,8 @@ namespace Logga.Controllers
 
         public ActionResult Details(int id)
         {
+            //if (!LoggaConfiguration.LoggaOptions.HavePermission) throw new ArgumentException("Not Have Permission");
+
             using (var connection = ConnectionConfiguration.GetOpenConnection(LoggaConfiguration._connectionString))
             {
                 var logga = connection.Query<LoggaEntry>("SELECT * FROM LoggaEntry WHERE LoggaEntryId = @id", new { id = id}).FirstOrDefault();

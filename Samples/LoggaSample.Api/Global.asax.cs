@@ -17,7 +17,7 @@ namespace LoggaSample.Api
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            LoggaConfiguration.UseSqlServerData("DefaultConnection");
+            //LoggaConfiguration.UseSqlServer("DefaultConnection");
             GlobalConfiguration.Configuration.Filters.Add(
                 new ErrorLogFilterAttribute());
         }

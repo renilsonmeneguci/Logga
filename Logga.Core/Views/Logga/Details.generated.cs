@@ -31,7 +31,7 @@ namespace ASP
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Logga/Details.cshtml")]
-    public partial class _Views_Logga_Details_cshtml : System.Web.Mvc.WebViewPage<Logga.Data.LoggaEntry>
+    public partial class _Views_Logga_Details_cshtml : System.Web.Mvc.WebViewPage<Logga.Entities.LoggaEntry>
     {
         public _Views_Logga_Details_cshtml()
         {
@@ -46,42 +46,42 @@ namespace ASP
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Hi, I\'m Logga and i\'m your friend" +
-"!</title>\r\n    <meta");
+WriteLiteral("\n\n<!DOCTYPE html>\n<html>\n<head>\n    <title>Hi, I\'m Logga and i\'m your friend!</ti" +
+"tle>\n    <meta");
 
 WriteLiteral(" name=\"viewport\"");
 
 WriteLiteral(" content=\"width=device-width\"");
 
-WriteLiteral(">\r\n    <link");
+WriteLiteral(">\n    <link");
 
 WriteLiteral(" rel=\"stylesheet\"");
 
 WriteLiteral(" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\"");
 
-WriteLiteral(">\r\n    <script");
+WriteLiteral(">\n    <script");
 
 WriteLiteral(" src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"");
 
-WriteLiteral("></script>\r\n</head>\r\n\r\n<body");
+WriteLiteral("></script>\n</head>\n\n<body");
 
 WriteLiteral(" bgcolor=\"white\"");
 
 WriteLiteral(" class=\"container\"");
 
-WriteLiteral(">\r\n    <div");
+WriteLiteral(">\n    <div");
 
 WriteLiteral(" class=\"navbar navbar-default navbar-fixed-top\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\n        <div");
 
 WriteLiteral(" class=\"container\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\n            <div");
 
 WriteLiteral(" class=\"navbar-header\"");
 
-WriteLiteral(">\r\n                <button");
+WriteLiteral(">\n                <button");
 
 WriteLiteral(" type=\"button\"");
 
@@ -91,19 +91,19 @@ WriteLiteral(" data-toggle=\"collapse\"");
 
 WriteLiteral(" data-target=\".navbar-collapse\"");
 
-WriteLiteral(">\r\n                    <span");
+WriteLiteral(">\n                    <span");
 
 WriteLiteral(" class=\"icon-bar\"");
 
-WriteLiteral("></span>\r\n                    <span");
+WriteLiteral("></span>\n                    <span");
 
 WriteLiteral(" class=\"icon-bar\"");
 
-WriteLiteral("></span>\r\n                    <span");
+WriteLiteral("></span>\n                    <span");
 
 WriteLiteral(" class=\"icon-bar\"");
 
-WriteLiteral("></span>\r\n                </button>\r\n");
+WriteLiteral("></span>\n                </button>\n");
 
 WriteLiteral("                ");
 
@@ -114,8 +114,8 @@ WriteLiteral("                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <br /><br />\r\n    <span>\r\n " +
-"       <h1>Server Error in \'/\' Application.<hr");
+WriteLiteral("\n            </div>\n        </div>\n    </div>\n    <br /><br />\n    <span>\n       " +
+" <h1>Server Error in \'/\' Application.<hr");
 
 WriteLiteral(" width=\"100%\"");
 
@@ -123,13 +123,13 @@ WriteLiteral(" size=\"1\"");
 
 WriteLiteral(" color=\"silver\"");
 
-WriteLiteral("></h1>\r\n\r\n        ");
+WriteLiteral("></h1>\n\n        ");
 
-WriteLiteral("\r\n    </span>\r\n\r\n    <font");
+WriteLiteral("\n    </span>\n\n    <font");
 
 WriteLiteral(" face=\"Arial, Helvetica, Geneva, SunSans-Regular, sans-serif \"");
 
-WriteLiteral(">\r\n\r\n        <b> Description: </b>\r\n");
+WriteLiteral(">\n\n        <b> Description: </b>\n");
 
 WriteLiteral("        ");
 
@@ -140,7 +140,7 @@ WriteLiteral("        ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <br /><br />\r\n\r\n        <b> Exception Details: </b>");
+WriteLiteral("\n        <br /><br />\n\n        <b> Exception Details: </b>");
 
             
             #line 42 "..\..\Views\Logga\Details.cshtml"
@@ -158,9 +158,9 @@ WriteLiteral(": ");
             
             #line default
             #line hidden
-WriteLiteral("<br>\r\n\r\n        ");
+WriteLiteral("<br>\n\n        ");
 
-WriteLiteral("\r\n\r\n        <br>\r\n\r\n        <b> Source File: </b> ");
+WriteLiteral("\n\n        <br>\n\n        <b> Source File: </b> ");
 
             
             #line 66 "..\..\Views\Logga\Details.cshtml"
@@ -169,14 +169,14 @@ WriteLiteral("\r\n\r\n        <br>\r\n\r\n        <b> Source File: </b> ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <br><br>\r\n\r\n        <b>Stack Trace:</b>\r\n\r\n        <table");
+WriteLiteral("\n        <br><br>\n\n        <b>Stack Trace:</b>\n\n        <table");
 
 WriteLiteral(" width=\"100%\"");
 
 WriteLiteral(" bgcolor=\"#ffffcc\"");
 
-WriteLiteral(">\r\n            <tbody>\r\n                <tr>\r\n                    <td>\r\n         " +
-"               <pre>\r\n");
+WriteLiteral(">\n            <tbody>\n                <tr>\n                    <td>\n             " +
+"           <pre>\n");
 
 WriteLiteral("                             ");
 
@@ -187,9 +187,9 @@ WriteLiteral("                             ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                            </pre>\r\n                    </td>\r\n                " +
-"</tr>\r\n            </tbody>\r\n        </table>\r\n\r\n        <br>\r\n        <b>Date:<" +
-"/b>&nbsp;");
+WriteLiteral("\n                            </pre>\n                    </td>\n                </t" +
+"r>\n            </tbody>\n        </table>\n\n        <br>\n        <b>Date:</b>&nbsp" +
+";");
 
             
             #line 84 "..\..\Views\Logga\Details.cshtml"
@@ -198,7 +198,7 @@ WriteLiteral("\r\n                            </pre>\r\n                    </td
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <br /><br>\r\n\r\n        <b>User:</b>&nbsp;");
+WriteLiteral("\n        <br /><br>\n\n        <b>User:</b>&nbsp;");
 
             
             #line 87 "..\..\Views\Logga\Details.cshtml"
@@ -207,7 +207,7 @@ WriteLiteral("\r\n        <br /><br>\r\n\r\n        <b>User:</b>&nbsp;");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <br /><br>\r\n\r\n        <b>Host:</b>&nbsp;");
+WriteLiteral("\n        <br /><br>\n\n        <b>Host:</b>&nbsp;");
 
             
             #line 90 "..\..\Views\Logga\Details.cshtml"
@@ -216,7 +216,7 @@ WriteLiteral("\r\n        <br /><br>\r\n\r\n        <b>Host:</b>&nbsp;");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <br /><br>\r\n    </font>\r\n</body>\r\n</html>\r\n");
+WriteLiteral("\n        <br /><br>\n    </font>\n</body>\n</html>\n");
 
         }
     }

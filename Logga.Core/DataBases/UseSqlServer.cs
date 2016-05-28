@@ -8,11 +8,11 @@ using System.Configuration;
 using Dapper;
 using System.Reflection;
 using System.IO;
-using System.Data;
+using Logga.Entities;
 
-namespace Logga.Data.SqlServer
+namespace Logga.DataBases
 {
-    public class UseSqlServerData
+    public class UseSqlServer
     {
         private readonly SqlConnection _connection;
         private readonly string _connectionString;
@@ -22,7 +22,7 @@ namespace Logga.Data.SqlServer
         /// </summary>
         /// <param name="connectionStringOrName"></param>
         /// <param name="installSchema"></param>
-        public UseSqlServerData(LoggaOptions options)
+        public UseSqlServer(LoggaOptions options)
         {
             if (options == null) throw new ArgumentNullException("Options");
 
@@ -34,7 +34,7 @@ namespace Logga.Data.SqlServer
             {
                 _connectionString = ConfigurationManager.ConnectionStrings[options.ConnectionString].ConnectionString;
             }
-            else 
+            else
             {
                 _connectionString = options.ConnectionString;
             }
@@ -44,13 +44,11 @@ namespace Logga.Data.SqlServer
                 CheckDatabaseExists(options.ConnectionString, isConnectionStringInConfiguration);
             }
 
-            if (options.CreateTables)
+            using (var connection = GetOpenConnection())
             {
-                using (var connection = GetOpenConnection())
-                {
-                    Install(connection);
-                }
+                Install(connection);
             }
+
         }
 
         /// <summary>
@@ -100,8 +98,8 @@ namespace Logga.Data.SqlServer
         {
             if (connection == null) throw new ArgumentNullException("connection");
 
-            var script = GetTextFomFile(typeof(UseSqlServerData).Assembly,
-                "Logga.Data.SqlServer.Install.sql");
+            var script = GetTextFomFile(typeof(UseSqlServer).Assembly,
+                "Logga.Install.SqlScript.sql");
 
             connection.Execute(script);
 

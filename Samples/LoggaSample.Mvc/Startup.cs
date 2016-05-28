@@ -1,4 +1,5 @@
 ﻿using Logga;
+using Logga.Entities;
 using Microsoft.Owin;
 using Owin;
 
@@ -11,7 +12,13 @@ namespace LoggaSample.Mvc
         {
             ConfigureAuth(app);
 
-            LoggaConfiguration.UseSqlServerData("DefaultConnection");
+            var options = new LoggaOptions
+            {
+                ConnectionString = "DefaultConnection",
+                CreateSchema = false
+            };
+
+            LoggaConfiguration.UseSqlServerData(options);
         }
     }
 }

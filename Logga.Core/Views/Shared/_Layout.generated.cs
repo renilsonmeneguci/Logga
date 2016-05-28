@@ -57,12 +57,23 @@ WriteLiteral(">\r\n    <title>");
             
             #line default
             #line hidden
-WriteLiteral(" - Logga Dashboard</title>\r\n");
+WriteLiteral(" - My ASP.NET Application</title>\r\n    <link");
+
+WriteLiteral(" rel=\"shortcut icon\"");
+
+WriteLiteral(" type=\"image/ico\"");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 245), Tuple.Create("\"", 267)
+, Tuple.Create(Tuple.Create("", 252), Tuple.Create<System.Object, System.Int32>(Href("~/LoggaIcon.ico")
+, 252), false)
+);
+
+WriteLiteral(">\r\n");
 
 WriteLiteral("    ");
 
             
-            #line 7 "..\..\Views\Shared\_Layout.cshtml"
+            #line 8 "..\..\Views\Shared\_Layout.cshtml"
 Write(Styles.Render("~/Content/css"));
 
             
@@ -107,7 +118,7 @@ WriteLiteral("></span>\r\n                </button>\r\n");
 WriteLiteral("                ");
 
             
-            #line 18 "..\..\Views\Shared\_Layout.cshtml"
+            #line 19 "..\..\Views\Shared\_Layout.cshtml"
            Write(Html.ActionLink("Logga", "Index", "Logga",  new { @class = "navbar-brand" }));
 
             
@@ -124,7 +135,7 @@ WriteLiteral(" class=\"nav navbar-nav\"");
 WriteLiteral(">\r\n                    <li>");
 
             
-            #line 22 "..\..\Views\Shared\_Layout.cshtml"
+            #line 23 "..\..\Views\Shared\_Layout.cshtml"
                    Write(Html.ActionLink("All Erros", "Index", "Home"));
 
             
@@ -140,7 +151,7 @@ WriteLiteral(">\r\n        <br/>\r\n");
 WriteLiteral("        ");
 
             
-            #line 29 "..\..\Views\Shared\_Layout.cshtml"
+            #line 30 "..\..\Views\Shared\_Layout.cshtml"
    Write(RenderBody());
 
             
@@ -149,7 +160,7 @@ WriteLiteral("        ");
 WriteLiteral("\r\n        <hr />\r\n        <footer>\r\n            <p>&copy; ");
 
             
-            #line 32 "..\..\Views\Shared\_Layout.cshtml"
+            #line 33 "..\..\Views\Shared\_Layout.cshtml"
                  Write(DateTime.Now.Year);
 
             
@@ -160,7 +171,7 @@ WriteLiteral(" - Logga</p>\r\n        </footer>\r\n    </div>\r\n\r\n");
 WriteLiteral("    ");
 
             
-            #line 36 "..\..\Views\Shared\_Layout.cshtml"
+            #line 37 "..\..\Views\Shared\_Layout.cshtml"
 Write(Scripts.Render("~/bundles/jquery"));
 
             
@@ -171,7 +182,7 @@ WriteLiteral("\r\n");
 WriteLiteral("    ");
 
             
-            #line 37 "..\..\Views\Shared\_Layout.cshtml"
+            #line 38 "..\..\Views\Shared\_Layout.cshtml"
 Write(Scripts.Render("~/bundles/bootstrap"));
 
             
@@ -182,7 +193,7 @@ WriteLiteral("\r\n");
 WriteLiteral("    ");
 
             
-            #line 38 "..\..\Views\Shared\_Layout.cshtml"
+            #line 39 "..\..\Views\Shared\_Layout.cshtml"
 Write(RenderSection("scripts", required: false));
 
             
